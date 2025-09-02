@@ -40,7 +40,8 @@ npm-debug.log*
 Thumbs.db
 
 # build output
-dist/
+app/dist/
+
 # generated types
 app/.astro/
 
