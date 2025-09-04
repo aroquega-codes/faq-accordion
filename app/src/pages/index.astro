@@ -25,51 +25,61 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="bg-purple-100 px-6 grid place-content-center min-h-svh">
-		<article
-			class="bg-white p-6 rounded-lg shadow-purple-950/10 shadow-[0px_32px_56px_0px] w-full max-w-150"
+	<body class="bg-purple-100 grid min-h-svh grid-rows-[1fr_auto]">
+		<main class="flex items-center justify-center px-6">
+			<article
+				class="bg-white p-6 rounded-lg shadow-purple-950/10 shadow-[0px_32px_56px_0px] w-full max-w-150"
+			>
+				<h1
+					class="text-purple-950 text-[32px] sm:text-[56px] font-bold"
+				>
+					<img
+						src="public/icon-star.svg"
+						class="mr-6 inline-block w-6 h-6 sm:w-10 sm:h-10"
+						alt=""
+					/>FAQs
+				</h1>
+				<Question
+					questionText="What is Frontend Mentor, and how will it help me?"
+				>
+					Frontend Mentor offers realistic coding challenges to help
+					developers improve their frontend coding skills with
+					projects in HTML, CSS, and JavaScript. It's suitable for all
+					levels and ideal for portfolio building.
+				</Question>
+				<Question questionText="Is Frontend Mentor free?">
+					Yes, Frontend Mentor offers both free and premium coding
+					challenges, with the free option providing access to a range
+					of projects suitable for all skill levels.
+				</Question>
+				<Question
+					questionText="Can I use Frontend Mentor projects in my portfolio?"
+				>
+					Yes, you can use projects completed on Frontend Mentor in
+					your portfolio. It's an excellent way to showcase your
+					skills to potential employers!
+				</Question>
+				<Question
+					questionText="How can I get help if I'm stuck on a Frontend Mentor challenge?"
+				>
+					The best place to get help is inside Frontend Mentor's
+					Discord community. There's a help channel where you can ask
+					questions and seek support from other community members.
+				</Question>
+			</article>
+		</main>
+		<footer
+			class="attribution p-2 bg-white text-center font-medium text-sm"
 		>
-			<h1 class="text-purple-950 text-[32px] sm:text-[56px] font-bold">
-				<img
-					src="public/icon-star.svg"
-					class="mr-6 inline-block w-6 h-6 sm:w-10 sm:h-10"
-					alt=""
-				/>FAQs
-			</h1>
-			<Question
-				questionText="What is Frontend Mentor, and how will it help me?"
-			>
-				Frontend Mentor offers realistic coding challenges to help
-				developers improve their frontend coding skills with projects in
-				HTML, CSS, and JavaScript. It's suitable for all levels and
-				ideal for portfolio building.
-			</Question>
-			<Question questionText="Is Frontend Mentor free?">
-				Yes, Frontend Mentor offers both free and premium coding
-				challenges, with the free option providing access to a range of
-				projects suitable for all skill levels.
-			</Question>
-			<Question
-				questionText="Can I use Frontend Mentor projects in my portfolio?"
-			>
-				Yes, you can use projects completed on Frontend Mentor in your
-				portfolio. It's an excellent way to showcase your skills to
-				potential employers!
-			</Question>
-			<Question
-				questionText="How can I get help if I'm stuck on a Frontend Mentor challenge?"
-			>
-				The best place to get help is inside Frontend Mentor's Discord
-				community. There's a help channel where you can ask questions
-				and seek support from other community members.
-			</Question>
-		</article>
-
-		<div class="attribution">
 			Challenge by <a
+				class="hover:text-violet-600 transition-colors"
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank">Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+			>. Coded by <a
+				href="https://github.com/aroquega-codes"
+				class="hover:text-violet-600 transition-colors"
+				target="_blank">aroquega</a
+			>.
+		</footer>
 	</body>
 </html>
