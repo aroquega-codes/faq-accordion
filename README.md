@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github repository](https://github.com/aroquega-codes/faq-accordion)
-- Live Site URL: soon 
+- Live Site URL: [github page](https://aroquega-codes.github.io/faq-accordion/)
 
 ## My process
 
