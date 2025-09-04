@@ -9,24 +9,30 @@ import "../styles/global.css";
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
+
+	@media screen and (min-width: 40rem) {
+		body {
+			background-image: url(/public/background-pattern-desktop.svg);
+		}
+	}
 </style>
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
 	<body class="bg-purple-100 px-6 grid place-content-center min-h-svh">
 		<article
-			class="bg-white p-6 rounded-lg shadow-purple-950/10 shadow-[0px_32px_56px_0px]"
+			class="bg-white p-6 rounded-lg shadow-purple-950/10 shadow-[0px_32px_56px_0px] w-full max-w-150"
 		>
-			<h1 class="text-purple-950 text-[32px] font-bold">
+			<h1 class="text-purple-950 text-[32px] sm:text-[56px] font-bold">
 				<img
 					src="public/icon-star.svg"
-					class="mr-6 inline-block w-6 h-6"
+					class="mr-6 inline-block w-6 h-6 sm:w-10 sm:h-10"
 					alt=""
 				/>FAQs
 			</h1>
@@ -58,5 +64,12 @@ import "../styles/global.css";
 				and seek support from other community members.
 			</Question>
 		</article>
+
+		<div class="attribution">
+			Challenge by <a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank">Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
 	</body>
 </html>

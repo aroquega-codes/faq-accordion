@@ -15,12 +15,15 @@ const { questionText } = Astro.props;
     }
 </style>
 
-<details class="border-b border-purple-100 my-6 last:mb-0 last:border-none">
-    <summary class="font-semibold mb-6 list-none flex items-center gap-6"
+<details
+    class="border-b border-purple-100 my-6 sm:my-[1.78rem] last:mb-0 last:border-none"
+>
+    <summary
+        class="font-semibold mb-6 sm:mb-[1.78rem] list-none flex items-center gap-6 sm:text-lg cursor-pointer hover:text-violet-600"
         ><span class="flex-1">{questionText}</span>
         <div class="indicator w-6 h-6"></div></summary
     >
-    <div class="text-purple-600 text-sm mb-6">
+    <div class="text-purple-600 text-sm sm:text-base mb-6">
         <slot />
     </div>
 </details>
