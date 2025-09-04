@@ -1,6 +1,7 @@
 ---
 import Question from "../components/Question.astro";
 import "../styles/global.css";
+const base = import.meta.env.BASE_URL;
 ---
 
 <style>
@@ -34,7 +35,7 @@ import "../styles/global.css";
 					class="text-purple-950 text-[32px] sm:text-[56px] font-bold"
 				>
 					<img
-						src="/icon-star.svg"
+						src={`${base}/icon-star.svg`}
 						class="mr-6 inline-block w-6 h-6 sm:w-10 sm:h-10"
 						alt=""
 					/>FAQs
